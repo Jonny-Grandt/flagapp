@@ -1,0 +1,47 @@
+/* Bakgrundsfärg */
+body {
+    background-color: #202C36; /* Mörkare blå */
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+  
+  /* SearchBar */
+  .search-bar {
+    margin: 16px auto;
+    width: 80%; /* Anpassa bredden */
+    max-width: 400px; /* För att matcha mobil och desktop */
+    display: flex;
+    justify-content: left; /* Justerar till vänster */
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #2B3844; /* Mörk blå */
+    color: #F2F2F2; /* Vit text */
+  }
+  
+  /* Kortens layout */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .card {
+    background-color: #2B3844; /* Mörk blå */
+    color: #F2F2F2; /* Vit text */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: left;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .card p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
