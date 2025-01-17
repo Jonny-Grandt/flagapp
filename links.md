@@ -1,2 +1,2 @@
-- [Github repository](https://ditt-repo-här)
-- [Deployat projekt](https://ditt-projekt-här)
+- [Github repository] https://github.com/Jonny-Grandt/flagapp
+- [Deployat projekt] flagapp-rosy.vercel.app
