@@ -1,0 +1,24 @@
+.search-box-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.search-items {
+  width: 300px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .search-box-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .search-items {
+    width: 100%;
+  }
+}

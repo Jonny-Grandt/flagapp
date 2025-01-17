@@ -1,0 +1,21 @@
+h2 {
+  font-weight: 600;
+  font-size: 17px;
+  margin: 2px 0 6px 0;
+}
+
+strong {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+span {
+  color: var(--text-secondary);
+  font-wight: 400;
+  font-size: 14px;
+}
+
+.card {
+  width: 270px;
+  background-color: var(--primary) !important;
+}

@@ -1,6 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  font-family: "Roboto", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --primary: #3e4a55;
+  --secondary: #202C36;
+  --text: #F2F2F2;
+  --text-secondary: #ffffffa1;
+  --chip-color: #444e56;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ligth-theme {
+  --primary: #ffffff;
+  --secondary: #fbfbfb;
+  --text: #000000;
+  --text-secondary: #000000a1;
+  --chip-color: #ebebeb;
+}
+
 body {
-    font-family: Open Sans, sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--secondary);
+}
+
+div {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
