@@ -3,14 +3,14 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 const CountryPage = () => {
-  const { id } = useParams();
+  const { name } = useParams();
   const [country, setCountry] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchCountry = async () => {
       try {
-        const response = await axios.get(`https://restcountries.com/v3.1/name/${id}`);
+        const response = await axios.get(`https://restcountries.com/v3.1/name/${name}`);
         setCountry(response.data[0]);
       } catch (err) {
         setError("Country not found.");
@@ -18,7 +18,7 @@ const CountryPage = () => {
     };
 
     fetchCountry();
-  }, [id]);
+  }, [name]);
 
   if (error) {
     return <div style={{ color: "white", padding: "20px" }}>{error}</div>;
